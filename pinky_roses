@@ -1,0 +1,13 @@
+{
+  "name": "Test",
+  "description": "Test",
+  "version": "0.0.0",
+  "main": "bot.pink_roses_discord_bot",
+  "scripts": {
+    "start": "node bot.pink_roses_discord_bot"
+  },
+  "dependencies": {
+    "discord.pink_roses_discord_bot": "11.1.0",
+    "request": "2.81.0",
+  }
+}
