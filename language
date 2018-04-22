@@ -1,4 +1,36 @@
-$ git clone https://github.com/heroku/java-getting-started.git
-$ cd java-getting-started
-$ mvn install
-$ heroku local:start
+git clone https://github.com/heroku/java-getting-started.git
+cd java-getting-started
+heroku create
+Creating warm-eyrie-9006... done, stack is cedar-14
+http://warm-eyrie-9006.herokuapp.com/ | https://git.heroku.com/warm-eyrie-9006.git
+Git remote heroku added
+git push heroku master
+Initializing repository, done.
+Counting objects: 68, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (68/68), 7.07 KiB | 0 bytes/s, done.
+Total 68 (delta 22), reused 65 (delta 22)
+
+remote: -----> Java app detected
+remote: -----> Installing OpenJDK 1.8... done
+remote: -----> Executing: ./mvnw -DskipTests clean dependency:list install
+...
+remote:        [INFO] ------------------------------------------------------------------------
+remote:        [INFO] BUILD SUCCESS
+remote:        [INFO] ------------------------------------------------------------------------
+remote:        [INFO] Total time: 14.062 s
+remote:        [INFO] Finished at: 2017-04-20T15:06:01+00:00
+remote:        [INFO] Final Memory: 38M/270M
+remote:        [INFO] ------------------------------------------------------------------------
+...
+-----> Discovering process types
+       Procfile declares types -> web
+
+-----> Compressing... done, 62.7MB
+-----> Launching... done, v7
+       http://warm-eyrie-9006.herokuapp.com/ deployed to Heroku
+
+To git@heroku.com:warm-eyrie-9006.git
+ * [new branch]      master -> master
+ heroku ps:scale web=1
