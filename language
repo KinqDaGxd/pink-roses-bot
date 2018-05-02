@@ -36,4 +36,4 @@ To git@heroku.com:warm-eyrie-9006.git
  heroku ps:scale web=1
 Using set buildpack heroku/nodejs
  !     Push rejected, failed to detect set buildpack heroku/nodejs
-language:ENGLISH
+language:JAVASCRIPT
