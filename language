@@ -37,3 +37,4 @@ To git@heroku.com:warm-eyrie-9006.git
 Using set buildpack heroku/nodejs
  !     Push rejected, failed to detect set buildpack heroku/nodejs
 language:JAVASCRIPT
+language:PYTHON
